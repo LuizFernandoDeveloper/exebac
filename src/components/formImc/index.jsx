@@ -16,15 +16,15 @@ function Imc(){
                     <div className="row d-flex text-center">
                         <div className="col">
                             <label>Altura</label>
-                            <input  placeholder="altura" type="number" className="form-control" onChange={event => setAltura(event.target.value)}/>
+                            <input   placeholder="altura" type="number" className="form-control text-center" onChange={event => setAltura(event.target.value)}/>
                         </div>
                         <div className="col">
                             <label>Peso</label>
-                            <input  placeholder="Peso" type="number" className="form-control" onChange={event => setPeso(event.target.value)} />
+                            <input  placeholder="Peso" type="number" className="form-control text-center" onChange={event => setPeso(event.target.value)} />
                         </div>
                         <div className="col">
                             <label>IMC</label>
-                            <input  type="text" disabled className="form-control" value={imc}/>
+                            <input  type="text" disabled className="form-control text-center" value={imc}/>
                         </div>
                     </div>
                 </div>
