@@ -5,7 +5,8 @@ function Imc(){
     let [imc, setImc] = useState(0);
 
     useEffect(()=>{
-        setImc(Math.round((peso /(altura * altura)), -2))
+        let result = Math.round((peso /(altura * altura)))
+        setImc((isNaN(result)? 0 : result))
     }, [altura, peso]);
 
     return(
